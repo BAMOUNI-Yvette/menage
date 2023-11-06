@@ -1,0 +1,367 @@
+body , html{
+    height: 100%;
+    margin: 0;
+    padding:0;
+    /* background-color: rgb(6, 82, 65); */
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+footer{
+    background-color: aqua;
+}
+
+
+.content{
+    flex-grow: 1;
+    
+}
+.container{
+    min-height: 100%;
+    position: relative;
+}
+/* .mainhome{
+    background-image: url(../img/joli\ fleur\ -\ Copie.jpg);
+} */
+.title{
+    background-color: transparent;
+    border: 0;
+}
+.bande-passante{
+    display: flex;
+}
+.circle{
+    position: relative; 
+    animation: moveCircle 2s linear infinite, glow 2s alternate infinite;
+    margin: 30px; /* Espacement entre les boules */
+    animation-duration: 5s; /* Durée de l'animation */
+    animation-timing-function: ease-in-out; /* Fonction de temporisation */
+    animation-iteration-count: infinite; /* Animation en boucle */
+    animation-direction: alternate; /* Animation en alternance */ 
+}
+/* Animation en séquence */
+.circle1 {
+    animation-name: moveCircle1; /* Utilisation de l'animation moveCircle1 */
+    animation-delay: 0s; /* Pas de délai pour la première boule */
+}
+/* Animation de déplacement horizontal */
+@keyframes moveCircle {
+    0% {
+        left: 100%; /* Position de départ à droite */
+        width:0; /*largeur nulle*/
+    }
+    100% {
+        left: -100%; /*sort à gauche de l'ecran */
+    }
+
+}
+.h0{
+    background-color: rgb(20, 20, 230);
+    border-radius: 300px;
+    padding: 30px;
+    width: 200px;
+    margin-left: 50px;
+    animation-name: moveCircle0; /* Utilisation de l'animation moveCircle0 */
+    animation-delay: 2s; /* Pas de délai pour la première boule */
+}
+.h1{
+    background-color: rgb(216, 216, 20);
+    border-radius: 300px;
+    padding: 30px;
+    width: 200px;
+    margin-left: 50px;
+    animation-name: moveCircle1; /* Utilisation de l'animation moveCircle1 */
+    animation-delay: 2s; /* Pas de délai pour la première boule */
+}
+.h2{
+    background-color: rgb(198, 16, 16);
+    border-radius: 300px;
+    padding: 30px;
+    width: 200px;
+    margin-left: 50px;
+    animation-name: moveCircle2; /* Utilisation de l'animation moveCircle2 */
+    animation-delay: 2s; /* Pas de délai pour la première boule */
+}
+
+.h3{
+    background-color: rgb(152, 22, 152);
+    border-radius: 300px;
+    padding: 30px;
+    width: 200px;
+    height: 10px;
+    margin-left: 50px;
+    animation-name: moveCircle3; /* Utilisation de l'animation moveCircle3 */
+    animation-delay: 2s; /* Pas de délai pour la première boule */
+}
+.container-f{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: blue;
+
+}
+.container p{
+    line-height: 1.4;
+}
+.image img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    max-width:100%
+}
+.texte{
+    padding: 20px;
+}
+
+/* .container-fluid1{
+    background-color:blue;
+}  */
+/* .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.text{
+    margin-left: 20px;
+    color: white;
+    width: 100%;
+   
+} */
+/* .mainhome{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0.3);
+} */
+/* .mainhome p{
+    line-height: 1,4;
+} */
+/*style de base pour le boton*/
+/* .voir{
+    text-align: center; */
+    /* padding: 10px 20px; */
+    /* font-size:20px; */
+    /* transition: background-color 0.3s, transform 0.3s; /* Transition sur la couleur de fond et la transformation */
+    /* color: white;
+} */ 
+
+/* Animation de survol */
+/* .voir:hover {
+    background-color: #ff5733;
+    color: white;
+    height: 5px;
+    
+} */
+
+/*la partie profils*/
+.titre{
+    color: blue;
+    text-align: center;
+}
+.transparent-card {
+    background-color: transparent; /* Définit l'arrière-plan de la carte comme transparent */
+    border: none; /* Supprime la bordure de la carte si elle existe */
+}
+
+/* .profils{
+    background-image: url(../img/2.jpg); 
+   
+} */
+.bouton-retour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(133, 133, 7);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.bouton-retour:hover {
+    background-color: #0056b3;
+}
+.bouton-suivant{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(145, 145, 10);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.bouton-suivant:hover {
+    background-color: #0056b3;
+}
+/*la partie service*/
+.card-body{ 
+    position: absolute;
+
+}
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+/* Appliquer une marge à gauche aux éléments <li> */
+li {
+    margin-left: 50px;
+}
+/*la partie inscription*/
+.ins{
+    background-image: url(../img/10.jpg);background-repeat: no-repeat; background-size: cover;
+    
+}
+
+
+
+/*la partie compte*/
+.submit{
+    text-align: center;
+}
+form{
+    align-items: center;
+}
+.label{
+    text-align: center;
+}
+.co{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.det{
+    text-align: center;
+}
+.rouge{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.blu{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.password-container {
+    position: relative;
+}
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/*** Testimonial ***/
+.commen {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(../img/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.tite {
+    text-align: center;
+    color: blue;
+}
+
+#comment-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#comment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* .testimonial {
+    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.testimonial-item {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 30px solid var(--primary);
+}
+
+.testimonial-item img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 60px;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--primary);
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--dark);
+} */
+
+
+
+
